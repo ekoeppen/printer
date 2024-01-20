@@ -1,0 +1,16 @@
+default:
+  image: registry.gitlab.com/40hz/docker-images/remix:6.1.9
+
+stages:
+  - check
+
+format-check:
+  stage: check
+  script:
+    - echo "Checking code formatting..."
+    - find include test -name '*.h' -o -name '*.hpp' -o -name '*.c' -o -name '*.cpp' | xargs clang-format-16 -n -Werror
+
+test:
+  stage: check
+  script:
+    - pio test
