@@ -30,8 +30,8 @@ struct printer {
         }
 
         while (value > 0 && n > 0) {
-            unsigned char c = value % r;
-            buffer[--n] = (r == hex ? hexDigits[c] : c + 48);
+            auto c = value % r;
+            buffer[--n] = (r == hex ? hexDigits[c] : static_cast<unsigned char>(c + 48));
             value = value / r;
         }
         if (negative) {
