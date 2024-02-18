@@ -1,7 +1,7 @@
 #pragma once
 
 #include <concepts>
-#include <span>
+#include <string_view>
 
 namespace printer {
 
