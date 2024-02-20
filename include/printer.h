@@ -43,7 +43,7 @@ struct printer {
     auto operator()(
         std::string_view value, padding p = left, unsigned int width = 0, char fill = ' ') -> void
     {
-        ptrdiff_t n = width - value.size();
+        size_t n = width > value.size() ? width - value.size() : 0;
         if (p == right) {
             while (n > 0) {
                 emit(fill);
