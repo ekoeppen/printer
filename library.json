@@ -1,11 +1,11 @@
 {
   "name": "printer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Formatted output",
   "keywords": "c++, printing, printf",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/40hz/cpp/printer.git"
+    "url": "https://git.sr.ht/~ekoeppen/printer"
   },
   "authors": {
     "name": "Eckhart Koeppen",
@@ -13,5 +13,5 @@
     "url": "https://40hz.org/"
   },
   "license": "MIT",
-  "homepage": "https://gitlab.com/40hz/cpp/printer"
+  "homepage": "https://git.sr.ht/~ekoeppen/printer"
 }
